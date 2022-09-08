@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Codenk</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="Images/Codenk1.png" alt="logo encriptador">
+            <h1>Codenk Encryptor</h1>
+        </div>
+        <div class="titulo">
+            <h1>Encripta aquí tu mensaje</h1>
+            <h2>Resultado</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion1">
+            <textarea class="input-texto"  placeholder="Ingrese el texto aquí. (Recuerde que no se aceptan números ni caracteres especiales)" required></textarea>
+        <div class="botones">
+            <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar </button>
+        </div>
+        </section>
+        <section class="seccion2">
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+             <div class="botones">
+                  <button class="copiar" onclick="copiar()">Copiar</button>
+             </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <img src="Images/Codenk1.png" alt="Logo Encriptador">
+    <p class="copyright">&copy Copyright Codenk Encryptor - 2022</p>
+</footer>
+</html>
